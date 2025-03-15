@@ -13,4 +13,7 @@ export const overridesPreferences = defineOverridesPreferences({
   widget: {
     lockScreen: false,
   },
+  theme: {
+    mode: 'light',
+  },
 });

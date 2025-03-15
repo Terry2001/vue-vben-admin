@@ -161,7 +161,6 @@ function clearPreferencesAndLogout() {
           <ThemeToggle class="mr-1 mt-[2px]" />
         </template>
         <template v-else-if="slot.name === 'language-toggle'">
-          <LanguageToggle class="mr-1" />
         </template>
         <template v-else-if="slot.name === 'fullscreen'">
           <VbenFullScreen class="mr-1" />
