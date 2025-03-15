@@ -9,7 +9,7 @@
 ├── apps # 项目应用目录
 │   ├── backend-mock # 后端模拟服务应用
 │   ├── web-antd # 基于 Ant Design Vue 的前端应用
-│   ├── web-ele # 基于 Element Plus 的前端应用
+│   ├── ai-qgb-admin # 基于 Element Plus 的前端应用
 │   └── web-naive # 基于 Naive UI 的前端应用
 ├── build-local-docker-image.sh # 本地构建 Docker 镜像脚本
 ├── cspell.json # CSpell 配置文件

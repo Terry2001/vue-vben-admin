@@ -85,7 +85,7 @@ You will see an output similar to the following, allowing you to select the proj
 │
 ◆  Select the app you need to run [dev]:
 │  ● @vben/web-antd
-│  ○ @vben/web-ele
+│  ○ @vben/ai-qgb-admin
 │  ○ @vben/web-naive
 │  ○ @vben/docs
 │  ○ @vben/playground

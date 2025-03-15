@@ -56,8 +56,8 @@ The execution command is: `pnpm run [script]` or `npm run [script]`.
     "build:antd": "pnpm run build --filter=@vben/web-antd",
     // Build the documentation separately
     "build:docs": "pnpm run build --filter=@vben/docs",
-    // Build the web-ele application separately
-    "build:ele": "pnpm run build --filter=@vben/web-ele",
+    // Build the ai-qgb-admin application separately
+    "build:ai-qgb-admin": "pnpm run build --filter=@vben/ai-qgb-admin",
     // Build the web-naive application separately
     "build:naive": "pnpm run build --filter=@vben/naive",
     // Build the playground application separately
@@ -84,8 +84,8 @@ The execution command is: `pnpm run [script]` or `npm run [script]`.
     "dev:antd": "pnpm -F @vben/web-antd run dev",
     // Start the documentation
     "dev:docs": "pnpm -F @vben/docs run dev",
-    // Start the web-ele application
-    "dev:ele": "pnpm -F @vben/web-ele run dev",
+    // Start the ai-qgb-admin application
+    "dev:ai-qgb-admin": "pnpm -F @vben/ai-qgb-admin run dev",
     // Start the web-naive application
     "dev:naive": "pnpm -F @vben/web-naive run dev",
     // Start the playground application
@@ -138,10 +138,10 @@ To run the `web-naive` application:
 pnpm dev:naive
 ```
 
-To run the `web-ele` application:
+To run the `ai-qgb-admin` application:
 
 ```bash
-pnpm dev:ele
+pnpm dev:ai-qgb-admin
 ```
 
 To run the `docs` application:

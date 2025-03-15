@@ -239,9 +239,9 @@ function navTo(nav: WorkbenchProjectItem | WorkbenchQuickNavItem) {
       :avatar="userStore.userInfo?.avatar || preferences.app.defaultAvatar"
     >
       <template #title>
-        早安, {{ userStore.userInfo?.realName }}, 开始您一天的工作吧！
+        Hello, {{ userStore.userInfo?.realName }}！
       </template>
-      <template #description> 今日晴，20℃ - 32℃！ </template>
+      <template #description> </template>
     </WorkbenchHeader>
 
     <div class="mt-5 flex flex-col lg:flex-row">
@@ -256,7 +256,6 @@ function navTo(nav: WorkbenchProjectItem | WorkbenchQuickNavItem) {
           title="快捷导航"
           @click="navTo"
         />
-        <WorkbenchTodo :items="todoItems" class="mt-5" title="待办事项" />
         <AnalysisChartCard class="mt-5" title="访问来源">
           <AnalyticsVisitsSource />
         </AnalysisChartCard>

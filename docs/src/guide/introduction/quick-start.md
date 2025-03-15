@@ -89,7 +89,7 @@ pnpm dev
 │
 ◆  Select the app you need to run [dev]:
 │  ○ @vben/web-antd
-│  ○ @vben/web-ele
+│  ○ @vben/ai-qgb-admin
 │  ○ @vben/web-naive
 │  ○ @vben/docs
 │  ● @vben/playground
@@ -104,7 +104,7 @@ pnpm dev
 
 ```bash
 pnpm run dev:antd
-pnpm run dev:ele
+pnpm run dev:ai-qgb-admin
 pnpm run dev:naive
 pnpm run dev:docs
 pnpm run dev:play

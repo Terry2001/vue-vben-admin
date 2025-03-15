@@ -56,8 +56,8 @@ npm 脚本是项目常见的配置，用于执行一些常见的任务，比如�
     "build:antd": "pnpm run build --filter=@vben/web-antd",
     // 单独构建文档
     "build:docs": "pnpm run build --filter=@vben/docs",
-    // 单独构建 web-ele 应用
-    "build:ele": "pnpm run build --filter=@vben/web-ele",
+    // 单独构建 ai-qgb-admin 应用
+    "build:ai-qgb-admin": "pnpm run build --filter=@vben/ai-qgb-admin",
     // 单独构建 web-naive 应用
     "build:naive": "pnpm run build --filter=@vben/naive",
     // 单独构建 playground 应用
@@ -84,8 +84,8 @@ npm 脚本是项目常见的配置，用于执行一些常见的任务，比如�
     "dev:antd": "pnpm -F @vben/web-antd run dev",
     // 启动文档
     "dev:docs": "pnpm -F @vben/docs run dev",
-    // 启动web-ele应用
-    "dev:ele": "pnpm -F @vben/web-ele run dev",
+    // 启动ai-qgb-admin应用
+    "dev:ai-qgb-admin": "pnpm -F @vben/ai-qgb-admin run dev",
     // 启动web-naive应用
     "dev:naive": "pnpm -F @vben/web-naive run dev",
     // 启动演示应用
@@ -138,10 +138,10 @@ pnpm dev:antd
 pnpm dev:naive
 ```
 
-运行 `web-ele` 应用：
+运行 `ai-qgb-admin` 应用：
 
 ```bash
-pnpm dev:ele
+pnpm dev:ai-qgb-admin
 ```
 
 运行 `docs` 应用：
