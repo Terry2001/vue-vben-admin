@@ -9,7 +9,8 @@ export namespace AuthApi {
 
   /** 登录接口返回值 */
   export interface LoginResult {
-    accessToken: string;
+    // accessToken: string;
+    tokenValue: string;
   }
 
   export interface RefreshTokenResult {
@@ -22,7 +23,7 @@ export namespace AuthApi {
  * 登录
  */
 export async function loginApi(data: AuthApi.LoginParams) {
-  return requestClient.post<AuthApi.LoginResult>('/auth/login', data);
+  return requestClient.post<AuthApi.LoginResult>('/ai-qgb/auth/login', data);
 }
 
 /**
@@ -47,5 +48,5 @@ export async function logoutApi() {
  * 获取用户权限码
  */
 export async function getAccessCodesApi() {
-  return requestClient.get<string[]>('/auth/codes');
+  return requestClient.get<string[]>('/ai-qgb/backend/sys-user/role-codes');
 }

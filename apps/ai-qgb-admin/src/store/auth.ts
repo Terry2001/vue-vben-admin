@@ -32,7 +32,8 @@ export const useAuthStore = defineStore('auth', () => {
     let userInfo: null | UserInfo = null;
     try {
       loginLoading.value = true;
-      const { accessToken } = await loginApi(params);
+      const res = await loginApi(params);
+      const accessToken = res?.tokenValue;
 
       // 如果成功获取到 accessToken
       if (accessToken) {
@@ -58,9 +59,9 @@ export const useAuthStore = defineStore('auth', () => {
             : await router.push(userInfo.homePath || DEFAULT_HOME_PATH);
         }
 
-        if (userInfo?.realName) {
+        if (userInfo?.name) {
           ElNotification({
-            message: `${$t('authentication.loginSuccessDesc')}:${userInfo?.realName}`,
+            message: `${$t('authentication.loginSuccessDesc')}:${userInfo?.name}`,
             title: $t('authentication.loginSuccess'),
             type: 'success',
           });
@@ -77,7 +78,7 @@ export const useAuthStore = defineStore('auth', () => {
 
   async function logout(redirect: boolean = true) {
     try {
-      await logoutApi();
+      // await logoutApi();
     } catch {
       // 不做任何处理
     }

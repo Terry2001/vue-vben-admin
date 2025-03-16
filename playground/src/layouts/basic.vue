@@ -129,7 +129,7 @@ watch(
       <UserDropdown
         :avatar
         :menus
-        :text="userStore.userInfo?.realName"
+        :text="userStore.userInfo?.name"
         description="ann.vben@gmail.com"
         tag-text="Pro"
         trigger="both"

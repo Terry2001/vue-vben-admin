@@ -238,17 +238,13 @@ function navTo(nav: WorkbenchProjectItem | WorkbenchQuickNavItem) {
     <WorkbenchHeader
       :avatar="userStore.userInfo?.avatar || preferences.app.defaultAvatar"
     >
-      <template #title>
-        Hello, {{ userStore.userInfo?.realName }}！
-      </template>
+      <template #title> Hello, {{ userStore.userInfo?.name }}！ </template>
       <template #description> </template>
     </WorkbenchHeader>
 
     <div class="mt-5 flex flex-col lg:flex-row">
-      <div class="mr-4 w-full lg:w-3/5">
-      </div>
-      <div class="w-full lg:w-2/5">
-      </div>
+      <div class="mr-4 w-full lg:w-3/5"></div>
+      <div class="w-full lg:w-2/5"></div>
     </div>
   </div>
 </template>

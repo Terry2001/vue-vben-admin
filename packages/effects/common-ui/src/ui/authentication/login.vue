@@ -31,12 +31,12 @@ const props = withDefaults(defineProps<Props>(), {
   loading: false,
   qrCodeLoginPath: '/auth/qrcode-login',
   registerPath: '/auth/register',
-  showCodeLogin: true,
-  showForgetPassword: true,
-  showQrcodeLogin: true,
-  showRegister: true,
+  showCodeLogin: false,
+  showForgetPassword: false,
+  showQrcodeLogin: false,
+  showRegister: false,
   showRememberMe: true,
-  showThirdPartyLogin: true,
+  showThirdPartyLogin: false,
   submitButtonText: '',
   subTitle: '',
   title: '',
@@ -70,7 +70,7 @@ async function handleSubmit() {
   if (valid) {
     localStorage.setItem(
       REMEMBER_ME_KEY,
-      rememberMe.value ? values?.username : '',
+      rememberMe.value ? values?.phone : '',
     );
     emit('submit', values);
   }
@@ -82,7 +82,7 @@ function handleGo(path: string) {
 
 onMounted(() => {
   if (localUsername) {
-    formApi.setFieldValue('username', localUsername);
+    formApi.setFieldValue('phone', localUsername);
   }
 });
 
